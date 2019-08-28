@@ -67,11 +67,26 @@ if dead == True:
 
 #########################################################################################################
 # TODO Add your part of the story here. Keep in mind you may NOT be coming right after the example above.
+print ("Thum.. Thum.. Thum.. You heard footsteps approaching.")
+sleep(delay*2)
+print ("Hello,", username, "I am the spirit of the cave, here take some of these food to help you with you journey.")
 
+choice= string (input("Take the food? [yes/no]"))
 
+if choice=="yes":
+    print ("You took the food and ate it. Now you have enough energy to continue on you journey.")
+    sleep(delay)
+    print("Congratulations! You made a wise choice.")
+elif choice=="no":
+    print ("You get hungry and your energy level dropped. You passed out.")
+    dead=true
+else:
+    print ("Enter either 'yes' or 'no'. The spirit of the cave would not take any other answers.")
 
 # TODO Don't forget to check if your user is dead at the end of your chapter!
-
+if dead==true:
+    print ("Oh no, when you are passed out, a bear came accross your body and YOU WERE EATEN.)
+    quit()
 
 #########################################################################################################
 
@@ -80,3 +95,6 @@ if dead == True:
 print("Look at that! You made it to the end of the story without dying! ")
 print("Congratulations... now go play again and find an interesting way to perish. ")
 print("Try again by hitting the green play button.")
+
+
+
