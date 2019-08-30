@@ -71,12 +71,13 @@ print ("Thum.. Thum.. Thum.. You heard footsteps approaching.")
 sleep(delay*2)
 print ("Hello,", username, "I am the spirit of the cave, here take some of these food to help you with you journey.")
 
-choice= string (input("Take the food? [yes/no]"))
+choice= str (input("Take the food? [yes/no]"))
 
 if choice=="yes":
     print ("You took the food and ate it. Now you have enough energy to continue on you journey.")
     sleep(delay)
     print("Congratulations! You made a wise choice.")
+    quit()
 elif choice=="no":
     print ("You get hungry and your energy level dropped. You passed out.")
     dead=true
@@ -85,7 +86,7 @@ else:
 
 # TODO Don't forget to check if your user is dead at the end of your chapter!
 if dead==true:
-    print ("Oh no, when you are passed out, a bear came accross your body and YOU WERE EATEN.)
+    print ("Oh no, when you are passed out, a bear came accross your body and YOU WERE EATEN.")
     quit()
 
 #########################################################################################################
